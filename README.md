@@ -11,7 +11,12 @@
 -----------------------------
 - 2** `->` all well
 - 4** `->` something wrong
--  5** `->` server broke
+- 5** `->` server broke
+-----------------------------
 
+## Step by step
+- create package.json for installs (npm init -y)
+- install expres (npm install express)
+- create js file to call express (const x = require('express')())
 
 
