@@ -17,7 +17,8 @@
 ## Step by step
 - create package.json for installs (npm init -y)
 - install expres (npm install express)
-- install expres (npm install muller)
+- install multer (npm install multer)
+- install ejs (npm install ejs)
 - create js file to call express (const x = require('express')())
 
 

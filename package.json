@@ -1,16 +1,25 @@
 {
-  "name": "sprint-4-1",
+  "name": "api_rest",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Rest API 10 min: https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Cadevall-Baulies/API_rest.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Cadevall-Baulies/API_rest/issues"
+  },
+  "homepage": "https://github.com/Alex-Cadevall-Baulies/API_rest#readme",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "muller": "^1.1.0"
+    "multer": "^1.4.5-lts.1"
   }
 }
