@@ -4,7 +4,6 @@
   "description": "- Rest API 10 min: https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon \"./Sprint 4-1/index.js\""
   },
   "repository": {
     "type": "git",
