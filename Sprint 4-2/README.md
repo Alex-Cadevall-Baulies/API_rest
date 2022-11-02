@@ -15,7 +15,7 @@
     - You win when sum of 2 dices = 7
 
 Level 1:
-About SQL:
+- About SQL:
     - `Sequalize as ORM`
     - Must register as player: unique identifier, register date, name must be unique
     - Player can check: their throws (face number + total number), their winning rating and success %
