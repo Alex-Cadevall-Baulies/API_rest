@@ -13,9 +13,9 @@ const storage = multer.diskStorage({
 });
 
 let fileFilter = function (req, file, cb) {
-  const fileTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'];
-
-    if (fileTypes.includes(file.mimetype)) {
+  let fileType = 'image/jpg' | 'image/png' | 'image/gif'
+    
+  if (file.mimetype === 'image/jpg' | file.mimetype === 'image/png' | file.mimetype === 'image/gif') {
         cb(null, true);
     } else {
         cb(null, false);
@@ -24,7 +24,7 @@ let fileFilter = function (req, file, cb) {
 
 const upload = multer({
   storage: storage,
-  filefilter: fileFilter
+  fileFilter: fileFilter
 })
 
 router.get('/', function (req, res) {
