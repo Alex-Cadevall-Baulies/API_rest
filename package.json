@@ -1,0 +1,27 @@
+{
+  "name": "api_rest",
+  "version": "1.0.0",
+  "description": "- Rest API 10 min: https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Cadevall-Baulies/API_rest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Cadevall-Baulies/API_rest/issues"
+  },
+  "homepage": "https://github.com/Alex-Cadevall-Baulies/API_rest#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
