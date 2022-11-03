@@ -11,7 +11,7 @@ const Stats = sequelize.define('stats', {
         allowNull: false
     },
     throws: {
-        type: Sequelize.ARRAY(Sequelize.TEXT),
+        type: Sequelize.ARRAY(Sequelize.INTEGER),
         defaultValue: [],
         allowNull: false
     },
@@ -19,4 +19,6 @@ const Stats = sequelize.define('stats', {
         type: Sequelize.STRING,
         allowNull: false
     }
-})
+});
+
+module.exports = Stats;

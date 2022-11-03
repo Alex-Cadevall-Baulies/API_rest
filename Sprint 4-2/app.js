@@ -7,6 +7,8 @@ const gameInfo = require('./models/gameInfo')
 const playerInfo = require('./models/playerInfo')
 const playerStats = require('./models/playerStats')
 
+gameInfo.belongsToMany(playerInfo, { through: playerStats })
+
 sequelize
     .sync()
     .then((result) => console.log(result))
