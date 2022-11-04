@@ -2,7 +2,9 @@
 
 ## Materials: 
 - Rest API 10 min: https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship
-- Sequelize basics: https://www.youtube.com/watch?v=ExTZYpyAn6s
+- Sequelize basics: 
+    - https://sequelize.org/docs/v6/getting-started/ 
+    - https://www.youtube.com/watch?v=ExTZYpyAn6s
 
 ## Basic info
 - Get `->` demanar data
