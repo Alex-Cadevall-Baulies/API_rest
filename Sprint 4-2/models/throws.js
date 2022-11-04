@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../utils/database');
 
-const Stats = sequelize.define('stats', {
+const Throws = sequelize.define('stats', {
     player_id: {
         type: Sequelize.INTEGER,
         allowNull: false
@@ -10,12 +10,19 @@ const Stats = sequelize.define('stats', {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    throws: {
-        type: Sequelize.ARRAY(Sequelize.INTEGER),
-        defaultValue: [],
+    dice_one: {
+        type: Sequelize.INTEGER,
         allowNull: false
     },
-    game_outcome: {
+    dice_two: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    total: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    round: {
         type: Sequelize.STRING,
         allowNull: false
     }
