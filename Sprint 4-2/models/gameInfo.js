@@ -10,15 +10,11 @@ const Game = sequelize.define('game', {
     },
     winner: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
-        allowNull: false,
-        primaryKey: true
+        allowNull: false
     },
-    looser: {
+    winner: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
-        allowNull: false,
-        primaryKey: true
+        allowNull: false
     }
 });
 

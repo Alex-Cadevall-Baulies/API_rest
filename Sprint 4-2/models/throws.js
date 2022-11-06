@@ -28,4 +28,4 @@ const Throws = sequelize.define('stats', {
     }
 });
 
-module.exports = Stats;
+module.exports = Throws;

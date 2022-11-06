@@ -10,6 +10,7 @@ const Player = sequelize.define('player', {
     },
     username: {
         type: Sequelize.STRING,
+        unique: true,
         allowNull: false
     },
     register_date: {

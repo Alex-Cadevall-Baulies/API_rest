@@ -23,3 +23,24 @@ Level 1:
     - You cannot delete a game but you can delete a players throw list
     - You can check all player's name list, player success % and average success %
 
+App workflow:
+1. Pax creates user:
+    - Player Class checks if user exist (x)
+    - if not, registers user to table (x)
+    - if it exists, console informs player (x)
+2. Player registers for game:
+    - Player Class checks if user exists
+    - Game class creates game id and placeholders for winer/looser
+3. Throws begin:
+    - Throw class registers throws, player, game id, and round
+    - System decides winner (sum of 2 faces = 7)
+    - Game class updates winner/looser placeholders, registers info
+    - Console informs winner and round
+4. Player checks score:
+    - Queries pick up player id and can check:
+        - win %
+        - Throw list per game
+        - Total won games
+        - Total losed games
+        - Total Games
+
