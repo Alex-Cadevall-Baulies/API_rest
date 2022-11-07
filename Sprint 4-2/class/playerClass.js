@@ -59,6 +59,26 @@ class Player {
             console.log(err)
         }
     }
+
+    async modifyPlayer(newUsername) {
+        
+        try {
+            let checkUser = await playerInfo.findAll({
+                where: {
+                    username: this.username
+                }
+            });
+        
+            if (checkUser) {
+                checkUser.set({
+                    username: newUsername
+                })
+            return checkUser
+            } else {
+            return new Error (`${this.username} no registrat`)
+        }
+    } catch (err) {return err}
+}
 }
 
 module.exports = Player
