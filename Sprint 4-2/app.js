@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
 
-const sequelize = require('./utils/database')
+app.use(express.json());
 
-const gameInfo = require('./models/gameInfo')
-const playerInfo = require('./models/playerInfo')
-const throws = require('./models/throws')
+const sequelize = require('./utils/database');
 
-gameInfo.belongsToMany(playerInfo, { through: throws })
+const gameInfo = require('./models/gameInfo');
+const playerInfo = require('./models/playerInfo');
+const throws = require('./models/throws');
+
+gameInfo.belongsToMany(playerInfo, { through: throws });
 
 sequelize
     .sync()
