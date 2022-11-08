@@ -33,9 +33,9 @@ router.post('/', async (req, res) => {
 // PUT modify player
 router.put('/:id', async (req, res) => {
     try {
-        let currentUsername = req.params
-        const newUsername = req.body
-        console.log(id, newUsername)
+        let currentUsername = req.params.id
+        const newUsername = req.body.username
+        console.log(currentUsername, newUsername)
 
         const user = new playerClass(currentUsername)
         const changeUser = user.modifyPlayer(newUsername)
