@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
 });
 
 // POST create player
-router.post('/:id', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         let newUsername = req.body.username
         console.log(newUsername)
@@ -38,9 +38,11 @@ router.put('/:id', async (req, res) => {
         console.log(currentUsername, newUsername)
 
         const user = new playerClass(currentUsername)
-        const changeUser = user.modifyPlayer(newUsername)
-
-        res.send(`Usuari ${changeUser.player_id} modificat, nou nom d'usuari: ${changeUser.username}`)
+        const changeUser = await user.modifyPlayer(newUsername)
+        console.log("AAAAAAAAAAAAAAAAAAAAAA")
+        console.log(changeUser)
+        
+        res.json(`Usuari ${currentUsername} modificat, nou nom d'usuari: ${changeUser}`)
 
     } catch (err) { console.log(err) }
 });

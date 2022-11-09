@@ -2,8 +2,10 @@
   "name": "api_rest",
   "version": "1.0.0",
   "description": "- Rest API 10 min: https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship",
-  "main": "index.js",
-  "scripts": {},
+  "main": "",
+  "scripts": {
+    "dev": ""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alex-Cadevall-Baulies/API_rest.git"

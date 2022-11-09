@@ -65,21 +65,25 @@ class Player {
         console.log(newUsername)
         
         try {
-            let checkUser = await playerInfo.findAll({
+            let checkUser = await playerInfo.findOne({
                 where: {
                     username: this.username
                 }
             });
 
-            console.log(checkUser)
-        
-            if (checkUser.length === 1) {
-                await checkUser.set({
-                    username: newUsername
-                })
-            console.log(checkUser)
-            return checkUser
+            if (checkUser) {
+            this.username = newUsername
+            
+            await checkUser.set({
+                username : this.username
+            })
+
+            await checkUser.save()
+
+            return checkUser.username
+
             } else {
+            console.log(`inside Error`)
             return new Error (`${this.username} no registrat`)
         }
     } catch (err) {return err}
