@@ -61,6 +61,8 @@ class Player {
     }
 
     async modifyPlayer(newUsername) {
+
+        console.log(newUsername)
         
         try {
             let checkUser = await playerInfo.findAll({
@@ -68,11 +70,14 @@ class Player {
                     username: this.username
                 }
             });
+
+            console.log(checkUser)
         
-            if (checkUser) {
-                checkUser.set({
+            if (checkUser.length === 1) {
+                await checkUser.set({
                     username: newUsername
                 })
+            console.log(checkUser)
             return checkUser
             } else {
             return new Error (`${this.username} no registrat`)
